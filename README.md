@@ -1,54 +1,47 @@
-# React + TypeScript + Vite
+This is the Frontend for the Task Manager application, built for the HMCTS DTS Developer Challenge. It allows users to create, view, update, and delete tasks through a clean and responsive interface.
+------------------------------
+TECH STACK
+React (with TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vite 
 
-Currently, two official plugins are available:
+Axios (for API communication)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CSS for styling 
 
-## Expanding the ESLint configuration
+Jest + React Testing Library (for testing)
+--------------------------------------------------
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+FEATURES
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+View all tasks
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Create new tasks
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Update existing tasks
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Delete tasks
+
+Loading states and error handling
+
+Fully responsive design
+------------------------------------------------------
+
+GETTING STARTED 
+Clone the git  repository 
+
+clone https://github.com/10digitmind/dts-developer-challenge-frontend.git
+cd dts-developer-challenge-frontend
+
+--------------------------------------------------
+INSTALL DEPENDECIES
+npm install
+---------------------------------------------------
+ Create a .env file
+VITE_API_URL=http://localhost:3500/api
+--------------------------------------------
+START USING THE SCRIPT
+
+npm run dev
+
+
